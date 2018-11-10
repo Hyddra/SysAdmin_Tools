@@ -6,7 +6,7 @@ import MySQLdb
 # to the database we want to use
 # Not that that the parameter for the password is 'passwd' and not 'password'
 
-db = MySQLdb.connect(host="localhost", user="hyddra", passwd="!!Styllez00", db="users")
+db = MySQLdb.connect(host="localhost", user="user", passwd="pass", db="users")
 
 # Create a cursor for the select
 cur = db.cursor()
