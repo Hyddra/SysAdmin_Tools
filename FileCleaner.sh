@@ -3,14 +3,6 @@
 # Description: Remove old files from
 # Author: Hyddra
 
-############ TO DO ###################
-# Add dry run - 
-# Improve usage to look professional
-#
-######################################
-
-
-# General Vars
 timestamp=$(date +%Y+%m+%d_%H:%M)
 path="/tmp/"
 action="-print -delete"
@@ -20,6 +12,7 @@ dry_run=false
 log_path="$HOME/Git/tools/testing_scripts"
 log="$log_path/run.out"
 
+# Useful help text
 display_usage()
 {
     cat <<USAGE| expand -t4
@@ -54,8 +47,7 @@ main()
 	echo "Finish time $(date)"
 }
 
-# Check the existance of the log file
-# If non-existent, create it
+# Check log file exists, and create if not
 
 if [[ ! -f $log ]]; then
     touch $log
@@ -73,19 +65,16 @@ while getopts ":hnr" option; do
     case $option in
 	h) display_usage
 	    ;;
-
-	n) # dry_run
+	n) # dry_run xD
 	    dry_run=true
 	    action="-print"
 	    main >> $log
 	    ;;
-
 	r) echo "=======================================" >> $log
 	   echo " Removing old files" >> $log	
 	   echo "=======================================" >> $log
 	   main >> $log
 	    ;;
-
 	*) echo "Invalid option..."
 	    display_usage
 	    ;;
