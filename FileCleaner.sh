@@ -4,8 +4,7 @@
 # Author: Hyddra
 
 timestamp=$(date +%Y+%m+%d_%H:%M)
-path="/tmp/"
-action="-print -delete"
+path="/tmp"
 dry_run=false
 
 # Log the cleaning
@@ -39,11 +38,15 @@ USAGE
 main()
 {
 	echo "Start time $(date)"
+	local action="$*"
 	if $dry_run; then 
 	    echo "======================================="
 	    echo "DRY RUN - Not Removing files"
 	    echo "======================================="; fi
-	find $path -mindepth 2 -type f -mtime +1 $action
+	for i in *; do
+		echo "===== $i ====="
+		find $path -name .snapshot -prune -o -type f -path "*/DONE/*" -mtime +1825 $action
+	done
 	echo "Finish time $(date)"
 }
 
@@ -67,13 +70,12 @@ while getopts ":hnr" option; do
 	    ;;
 	n) # dry_run xD
 	    dry_run=true
-	    action="-print"
-	    main >> $log
+	    main -print >> $log
 	    ;;
 	r) echo "=======================================" >> $log
 	   echo " Removing old files" >> $log	
 	   echo "=======================================" >> $log
-	   main >> $log
+	   main -print -delete >> $log
 	    ;;
 	*) echo "Invalid option..."
 	    display_usage
