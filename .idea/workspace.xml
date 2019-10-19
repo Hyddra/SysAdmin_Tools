@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bae8d30a-da2a-4064-937f-76fc852ea6e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Glastonbury.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/comma_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remove_releases.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,14 +35,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Glastonbury.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#20#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/remove_releases.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" selection-start-line="4" selection-start-column="28" selection-end-line="32" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/firefox/firefox_profile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -74,6 +89,7 @@
         <option value="$PROJECT_DIR$/modules/collatz_sequence.py" />
         <option value="$PROJECT_DIR$/modules/comma_code.py" />
         <option value="$PROJECT_DIR$/Glastonbury.py" />
+        <option value="$PROJECT_DIR$/remove_releases.sh" />
       </list>
     </option>
   </component>
@@ -249,6 +265,14 @@
       <option name="presentableId" value="Default" />
       <updated>1547307734558</updated>
     </task>
+    <task id="LOCAL-00001" summary="Automating web browsing">
+      <created>1565567951017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565567951017</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -262,9 +286,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="21" width="3840" height="2139" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49792817" visible="true" weight="0.049551923" />
-      <window_info id="Structure" order="1" sideWeight="0.5020718" side_tool="true" visible="true" weight="0.049551923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49447513" visible="true" weight="0.024775961" />
+      <window_info id="Structure" order="1" sideWeight="0.5055249" side_tool="true" visible="true" weight="0.024775961" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -272,14 +297,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28423133" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973643" visible="true" weight="0.28423133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32970837" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32871974" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4280771" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002636" side_tool="true" visible="true" weight="0.28423133" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32970837" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -292,6 +317,10 @@
       <window_info anchor="right" id="Maven" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Automating web browsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automating web browsing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/Robots.py" />
@@ -329,11 +358,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Glastonbury.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#20#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/firefox/firefox_profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove_releases.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="4" selection-start-column="28" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
