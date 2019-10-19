@@ -4,7 +4,7 @@
 # Description: Purge Log Files
 # Implementation: Somewhere over the Rainbow
 
-path="/opt/ims/live/logs"
+path="/var/log"
 timestamp=$(date +%Y-%m-%d_%H:%M:%S)
 filename="Purged_$timestamp.log"
 log_path="$path/purged_logs"
