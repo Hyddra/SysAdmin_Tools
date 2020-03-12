@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Verify the hash of downloaded files
+
+echo "Check the sha256sum of a download"
+read -p "> " sha
+echo "Which file am I checking?"
+read -p "> " file
+
+
+echo "$sha $file" | sha256sum -c
