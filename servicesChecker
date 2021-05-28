@@ -1,0 +1,23 @@
+import os, getpass
+import sys,subprocess
+import re
+
+currentuser = getpass.getuser()
+myuser = 'myuser'
+jobList = []
+files = os.listdir("/path_to_dir")
+
+
+if currentUser != myuser:
+    print("#############################################################################")
+    print("#\n# This program should be run as: \n#\t", myuser)
+    print("#############################################################################")
+    sys.exit(3)
+   
+ for item in files:
+  match = re.search("JobChecker*", item)
+  if match:
+      jobList.append(item)
+ 
+for job in jobList:
+    print(job)
